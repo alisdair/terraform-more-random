@@ -3,9 +3,9 @@ resource "random_id" "random" {
     uuid = "${uuid()}"
   }
 
-  byte_length = 50
+  byte_length = 32
 }
 
 output "random" {
-  value = "${random_id.random.hex}"
+  value = "rnd-${random_id.random.hex}"
 }

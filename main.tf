@@ -1,3 +1,5 @@
+# comments
+
 resource "random_id" "random" {
   keepers {
     uuid = "${uuid()}"
